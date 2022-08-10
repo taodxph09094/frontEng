@@ -1,0 +1,12 @@
+.hero1{
+	height:auto;
+	width: 100%;
+ aspect-ratio: 3000/1080;
+	background-image: url(https://admin.ebomb.edu.vn/uploads/images/userfiles/2021/07/tieng_anh_mua_he0101.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.quantityComponents{
+   padding-left:40px ;
+   padding-right: 40px;
+}
