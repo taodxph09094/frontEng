@@ -2,6 +2,7 @@ import React from "react";
 import { Container } from "reactstrap";
 import "./about.css";
 import { FcCheckmark } from "react-icons/fc";
+import { Link } from "react-router-dom";
 
 const RouterStudy = () => {
   return (
@@ -43,9 +44,9 @@ const RouterStudy = () => {
                 đoạn văn ngắn, đơn giản
               </p>
               <p style={{ textAlign: "center" }}>
-                <a className="button1" href="#">
+                <Link to={`/registerCourse`} className="button1">
                   Nhận tư vấn
-                </a>
+                </Link>
               </p>
             </div>
           </div>
@@ -69,9 +70,9 @@ const RouterStudy = () => {
                 nghiệm và cảm xúc cá nhân...
               </p>
               <p style={{ textAlign: "center" }}>
-                <a className="button1" href="#">
+                <Link to={`/registerCourse`} className="button1">
                   Nhận tư vấn
-                </a>
+                </Link>
               </p>
             </div>
           </div>
@@ -97,9 +98,9 @@ const RouterStudy = () => {
                 thành thạo kỹ thuật làm bài reading
               </p>
               <p style={{ textAlign: "center" }}>
-                <a className="button1" href="#">
+                <Link to={`/registerCourse`} className="button1">
                   Nhận tư vấn
-                </a>
+                </Link>
               </p>
             </div>
           </div>
@@ -123,9 +124,9 @@ const RouterStudy = () => {
                 Tăng cường khả năng speaking
               </p>
               <p style={{ textAlign: "center" }}>
-                <a className="button1" href="#">
+                <Link to={`/registerCourse`} className="button1">
                   Nhận tư vấn
-                </a>
+                </Link>
               </p>
             </div>
           </div>

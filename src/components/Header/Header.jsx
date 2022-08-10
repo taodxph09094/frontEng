@@ -1,24 +1,19 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
+import { useSelector } from "react-redux";
 import { Container } from "reactstrap";
+import { loadUser } from "../../actions/userAction";
+import store from "../../store";
 import "./header.css";
+import UserOptions from "./UserOptions";
 
 const navLinks = [
   {
-    display: "TẠI SAO CHỌN BEST IELTS ?",
-    url: "#",
-  },
-
-  {
-    display: "PHƯƠNG PHÁP HỌC",
-    url: "#",
+    display: "ĐĂNG KÝ HỌC",
+    url: "/registerCourse",
   },
   {
     display: "CÁC KHÓA HỌC",
-    url: "#",
-  },
-  {
-    display: "HỖ TRỢ THẮC MẮC",
-    url: "#",
+    url: "/courses",
   },
 ];
 
@@ -27,13 +22,16 @@ const Header = () => {
 
   const menuToggle = () => menuRef.current.classList.toggle("active__menu");
 
+  window.addEventListener("contextmenu", (e) => e.preventDefault());
   return (
     <header className="header">
       <Container>
         <div className="navigation d-flex align-items-center justify-content-between">
           <div className="logo">
             <h2 className=" d-flex align-items-center gap-1">
-              <i class="ri-pantone-line"></i> Learners.
+              <a style={{ textDecoration: "none", color: "black" }} href="/">
+                <i className="ri-pantone-line"></i> BEST IELTS.
+              </a>
             </h2>
           </div>
 
@@ -50,14 +48,14 @@ const Header = () => {
 
             <div className="nav__right">
               <p className="mb-0 d-flex align-items-center gap-2">
-                <i class="ri-phone-line"></i> +88 0123456789
+                <i className="ri-phone-line"></i> +88 0123456789
               </p>
             </div>
           </div>
 
           <div className="mobile__menu">
             <span>
-              <i class="ri-menu-line" onClick={menuToggle}></i>
+              <i className="ri-menu-line" onClick={menuToggle}></i>
             </span>
           </div>
         </div>

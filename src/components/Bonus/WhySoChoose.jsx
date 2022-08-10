@@ -4,7 +4,8 @@ import { Container, Row, Col } from "reactstrap";
 import aboutImg from "../../assests/images/k2.jpg";
 import CountUp from "react-countup";
 import { FcCancel } from "react-icons/fc";
-import "./about.css";
+import { Link } from "react-router-dom";
+// import "./about.css";
 
 const WhySoChoose = () => {
   return (
@@ -56,9 +57,9 @@ const WhySoChoose = () => {
                 Bạn thiếu tự tin với vốn từ vựng ít ỏi?
               </h5>
               <div className="register">
-                <a href="#" className="register-Link">
+                <Link to={`/registerCourse`} className="register-Link">
                   Tư vấn giải pháp
-                </a>
+                </Link>
               </div>
             </div>
           </Col>

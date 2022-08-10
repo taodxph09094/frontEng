@@ -16,6 +16,7 @@ import Footer from "../components/Footer/Footer";
 import WhySoChoose from "../components/Bonus/WhySoChoose";
 import RouterStudy from "../components/Bonus/RouterStudy";
 import Quantity from "../components/Bonus/Quantity";
+import Endow from "../components/Bonus/Endow";
 
 const Home = () => {
   return (
@@ -27,12 +28,13 @@ const Home = () => {
       <WhySoChoose />
       <RouterStudy />
       <Quantity />
-      <Courses />
+      <Endow />
+      {/* <Courses />
       <ChooseUs />
 
       <Features />
       <FreeCourse />
-      <Testimonials />
+      <Testimonials /> */}
       <Newsletter />
       <Footer />
     </Fragment>

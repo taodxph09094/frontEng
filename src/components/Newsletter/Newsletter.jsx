@@ -8,10 +8,12 @@ const Newsletter = () => {
       <Container className="newsletter">
         <Row>
           <Col lg="12" className="text-center">
-            <h2 className="mb-4">Subscribe Our Newsletter</h2>
+            <h2 className="mb-4">
+              Mọi thắc mắc xin liên hệ với chúng tôi qua đây
+            </h2>
             <div className="subscribe">
               <input type="text" placeholder="Email" />
-              <button className="btn">Subscribe</button>
+              <button className="btn">Gửi</button>
             </div>
           </Col>
         </Row>
